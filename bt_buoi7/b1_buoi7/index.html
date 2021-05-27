@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+	function kiemtra()
+	{
+		var x = document.getElementById('soa').value;
+		var a = x.trim();
+		if(a==null || a=="")
+			{
+				alert("bạn chưa nhập dữ liệu!"); exit();
+			}
+		else if(a>=1 && a<=10)
+			{
+				document.getElementById('KQ').innerText = a + " nằm trong khoảng từ 1 đến 10";
+				exit();
+			}
+		else if(a>=20 && a<= 100)
+			{
+				document.getElementById('KQ').innerText = a + " nằm trong khoảng từ 20 đến 100"; 
+				exit();
+			}
+		else
+			{
+				document.getElementById('KQ').innerText = a + "không nằm trong khoảng từ 1 đến 10 hoặc từ 20 đến 100";
+				exit();
+			}
+	}
+</script>
+</head>
+
+<body>
+	<form>
+		<label>Nhập vào số a :<input type="text" id="soa" value="" required ></label>
+		<input type="button" onClick="kiemtra()" value="kiểm tra">
+	</form>
+	<div id="KQ"></div>
+</body>
+</html>

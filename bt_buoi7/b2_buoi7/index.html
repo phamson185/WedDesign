@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		body{text-align: center;}
+	</style>
+<script>
+	function findX()
+	{
+		var a = document.getElementById('soa').value;
+		var b = document.getElementById('sob').value;
+		
+		if(a==null || a=="")
+			{
+				alert("hệ số a không được bỏ trống!");
+				exit();
+			}
+		else if(a==0)
+			{
+				alert("hệ số a không được bằng 0 !");
+				exit();
+			}
+		else 
+			{
+				var x = -b/a;
+				/*var html ='<div>'+"x = "+x+'</div>' ;
+				document.getElementById('KQ').insertAdjacentHTML('afterend',html);
+				var html ='<div>'+a+"x + "+b+" = 0"  +'</div>' ;
+				document.getElementById('pt').insertAdjacentHTML('afterend',html);*/
+				document.getElementById('KQ').innerText = "x = "+ x;
+				document.getElementById('pt').innerText = a+"x + "+b+" = 0";
+			}
+		
+	}
+</script>
+
+</head>
+
+<body>
+	<div class="content">
+		<div><p><h3>giải phương trình bậc nhất<br> ax + b = 0</h3></p></div>
+		<form>
+			<label> Nhập vào hệ số a:<br><input type="text" id="soa" size="40" required></label><br>
+			<label> Nhập vào hệ số b:<br><input type="text" id="sob" size="40" required></label>
+			<p>Phương trình bậc nhất của bạn đang có dạng :</p>
+			<div id="pt"></div>
+			<input type="button" onClick="findX()" value="Tìm X">
+			<div id="KQ"></div>
+			
+		</form>
+	</div>
+</body>
+</html>

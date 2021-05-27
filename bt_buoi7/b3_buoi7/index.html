@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		body{text-align: center;}
+	</style>
+	<script>
+		function sosanh()
+		{
+			var a = document.getElementById('soa').value;
+			var b = document.getElementById('sob').value;
+			var c = document.getElementById('soc').value;
+			var min = a ,max = a;
+			
+			if(a==null || a=="" ||b==null || b=="" || c==null || c=="")
+				{
+					alert("bạn chưa nhập đủ số!")
+				}
+			else
+			{
+				if(max < b)	{max = b;}
+				if(max < c)	{max = c;}
+				if(min > b)	{min = b;}
+				if(min > c)	{min = c;}
+				/*var html ='<div>'+"Số lớn nhất trong 3 số là :"+max+'</div>' ;
+				document.getElementById('KQ1').insertAdjacentHTML('afterend',html);
+				var html ='<div>'+"Số nhỏ nhất trong 3 số là :"+min+'</div>' ;
+				document.getElementById('KQ2').insertAdjacentHTML('afterend',html);*/
+				document.getElementById('KQ1').innerText= "Số lớn nhất trong 3 số là :"+max;
+				document.getElementById('KQ2').innerText= "Số nhỏ nhất trong 3 số là :"+min;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div class="content">
+		<div><h3>Tìm Max Min 3 Số </h3></div>
+		<form>
+			<label> Nhập vào số thứ nhất<br><input type="text" id="soa"  required></label><br>
+			<label> Nhập vào số thứ hai<br><input type="text" id="sob"  required></label><br>
+			<label> Nhập vào số thứ ba<br><input type="text" id="soc"  required></label><br>
+			<input type="button" onClick="sosanh()" value="Tìm X">
+			<div id="KQ1"></div>
+			<div id="KQ2"></div>
+		</form>
+	</div>
+</body>
+</html>

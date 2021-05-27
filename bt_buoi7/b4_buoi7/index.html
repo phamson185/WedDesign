@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bai 4 - Buổi 7</title>
+</head>
+<body>
+<header></header>
+<main>
+    Nhập vào hệ số giai thừa: <br><br>
+    <input type="number" id="fracNumber" name="fracNumber" required> <br><br>
+    <button onclick="calFrac()">Tính giai thừa</button>
+    <p id="result"></p>
+</main>
+<footer></footer>
+<script>
+    function calFrac() {
+        let fracInput = document.getElementById('fracNumber');
+        let fracResult = document.getElementById('result');
+        var fracNumber = fracInput.value;
+        var resultString = '';
+        var fracString = '';
+        var result = 1;
+        if (fracNumber == null || fracNumber === '') {
+            alert('Vui long nhap vao he so giai thua');
+            fracInput.focus();
+        } else {
+            if (fracNumber === 0 || fracNumber === 1) {
+                fracResult.value = fracNumber + '! = ' + fracNumber;
+            } else {
+
+                for (var i = 1; i <= fracNumber; i++) {
+                    // concatenate fracNumber string as a formula
+                    if (i < fracNumber) {
+                        fracString += i + ' x ';
+                    } else {
+                        fracString += i;
+                    }
+                    // get result
+                    result *= i;
+
+                }
+                resultString = fracNumber + '! = ' + fracString + ' = ' + result;
+                fracResult.innerText = resultString;
+            }
+        }
+    }
+</script>
+</body>
+</html>
