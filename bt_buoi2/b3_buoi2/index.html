@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+.content{
+	border-top: 2px solid  #594E4F;
+	width: 20%;
+	margin-left: 40%;
+}	
+</style>
+</head>
+
+<body>
+	<div class="content">
+		<h1>Travel reservation form</h1>
+		<p><b>* denotes mandotory</b></p>
+		<p>
+			<label for="fullname">Full Name*:</label><br>
+			<input id="fullname" name="name" type="text" placeholder="FirstName LastName" autofocus>
+		</p>
+		<p>
+			<label for="email">Email address*:</label><br>
+			<input id="email" name="email" type="email" autocomplete="off" autofocus>
+		</p>
+		<p>
+			<label for="tourpackage">Select Tour Package</label><br>
+			<select style="width: 70px">
+				<option>Goa</option>
+				<option>VN</option>
+				<option>UK</option>
+				<option>USA</option>
+			</select>
+		</p>
+		<p>
+			<label for="date">Arrival date*:</label><br>
+			<input id="date" name="date" type="date" autocomplete="off" placeholder="m/d/y" autofocus>
+		</p>
+		<p>
+			<label for="phone">Number of persons*:</label><br>
+			<input id="phone" name="phone" type="number" autofocus>
+		</p>
+		<p>
+			<label for="avail">What do you want to avail?*</label><br>
+			<label for="broading">Broading</label><input type="checkbox" name="broading" value="" ><br>
+			<label for="fooding">Fooding</label><input type="checkbox" name="fooding" value="" ><br>
+			<label for="sight">Sight Seeing</label><input type="checkbox" name="sight" value="" >
+		</p>
+		<p>
+			<label for="discount">Discount Coupon code</label><br>
+			<input id="discount" name="discount" type="text" autofocus>
+		</p>
+		<p>
+			<label>Terms adn conditions*</label><br>
+			<input type="radio" id="agree" name="opinion" value="" /><label for="male">I Agree</label>
+			<input type="radio" id="disagree" name="opinion" value="" /><label for="female">I Disagree</label>
+		</p>
+		<button type="submit">Complete reservation</button>
+	</div>
+</body>
+</html>

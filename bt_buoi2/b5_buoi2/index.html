@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	body{
+		font-size: 20px;
+	}
+	table{
+		margin-top: 20px;
+	}
+	.container{
+		width:30%;
+		margin-left: 35%;
+	}
+	.current{
+		margin-top: 50px;
+		line-height: 2px;
+	}
+</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="form">
+			<p>
+				<label><b>Simple form with name and age</b></label><br>
+				<label for="fullname"> Name :</label>
+				<input id="fullname" name="name" type="text" autofocus><br>
+				<label for="age">Age :</label>
+				<input id="age" name="age" type="number" autofocus>
+				<button type="submit">Add</button>
+			</p>
+		</div>
+		<div class="data">
+			<p>
+				<p class="current"><b>Current data in the system...</b></p>
+				<table border="1">
+					<tr>
+						<td></td>
+						<td>Name</td>
+						<td>Age</td>
+					</tr>
+					<tr>
+						<td><a href="#">Delete</a></td>
+						<td>John</td>
+						<td>23</td>
+					</tr>
+					<tr>
+						<td><a href="#">Delete</a></td>
+						<td>Mike</td>
+						<td>55</td>
+					</tr>
+					<tr>
+						<td><a href="#">Delete</a></td>
+						<td>Albert</td>
+						<td>39</td>
+					</tr>
+				</table>
+			</p>
+		</div>
+		<p><button><a href="#">Click here</a></button>&nbsp;to create a Table and some data ysing Javascript</p>
+	</div>
+</body>
+</html>

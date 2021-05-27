@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+}
+table{
+	border-top: 1px solid  #000000;
+	margin-left: 25%;
+}
+table th{
+	text-align: left;
+}
+table .item{
+	width: 500px
+}
+table .name{
+	width: 100px;
+}
+img{
+	width: 300px;
+}
