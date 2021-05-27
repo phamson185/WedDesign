@@ -1,0 +1,30 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.container{
+	background: #23DA26;
+}
+.content{
+	width: 95%;
+	margin-left: 2.5%;
+
+}
+.student {
+	
+}
+.student h1{
+	
+	color:#FF0004;
+}
+h2{
+	color:#FFFFFF;
+}
+h1,h2,p {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+.pic{
+	background: #FFF000;
+	text-align: center;
+}

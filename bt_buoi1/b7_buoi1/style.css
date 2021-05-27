@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+}
+.container{
+	width: 35%;
+	margin-left: 32.5%;
+	border: 1px solid  #000000;
+}
+.content{
+	width: 98%;
+	margin-left: auto;
+}
+.header{
+	height: 40px;
+	border-bottom: 1px solid  #4B3F40;
+}
+.header p{
+	margin-top: 20px;
+}
+.main{
+	margin: 20px 0px ;
+	border-bottom: 1px solid  #4B3F40;
+}
+.main p{
+	margin-bottom: 20px;
+}
+.main ol{
+	margin-bottom: 20px;
+}
+footer p{
+	margin-bottom: 20px;
+}
+footer a{
+	color: blue;
+}
+footer ul{
+	margin-bottom: 20px;
+}
