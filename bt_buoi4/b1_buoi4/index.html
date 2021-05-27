@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cac phep tinh co ban</title>
+	<script type="text/javascript">
+		function Tinh() {
+			var a=document.getElementById('soa');
+			var b=document.getElementById('sob');
+			
+			var tong = Number(a.value) + Number(b.value);
+			var kq1 =document.getElementById('ketqua1');
+			kq1.value=tong;
+			
+			var hieu = Number(a.value) - Number(b.value);
+			var kq2 =document.getElementById('ketqua2');
+			kq2.value=hieu;
+			
+			var tich = Number(a.value) * Number(b.value);
+			var kq3 =document.getElementById('ketqua3');
+			kq3.value=tich;
+			
+			var thuong = Number(a.value) / Number(b.value);
+			var kq4 =document.getElementById('ketqua4');
+			kq4.value=thuong;
+			
+			var du = Number(a.value) % Number(b.value);
+			var kq5 =document.getElementById('ketqua5');
+			kq5.value=du;
+		}
+	</script>  
+</head>
+<body style="font-family: arial; background-color: lavender">
+	<table> 
+		<tr>
+			<td>Nhập số a:</td>
+			<td><input type="text" id="soa"></td>
+		</tr>
+		<tr>
+			<td>Nhập số b:</td>
+			<td><input type="text" id="sob"></td>
+		</tr>
+		<tr>
+			<button onClick="Tinh();">Tính!</button>
+		</tr>
+		<tr>
+			<td colspan="2">tổng của 2 số là:<input type="text" id="ketqua1"></td>
+		</tr>
+		<tr>
+			<td colspan="2">hiệu của 2 số là:<input type="text" id="ketqua2"></td>
+		</tr>
+		<tr>
+			<td colspan="2">tích của 2 số là:<input type="text" id="ketqua3"></td>
+		</tr>
+		<tr>
+			<td colspan="2">thương của 2 số là:<input type="text" id="ketqua4"></td>
+		</tr>
+		<tr>
+			<td colspan="2">phần chi dư của 2 số là:<input type="text" id="ketqua5"></td>
+		</tr>
+	</table>
+
+</body>
+</html>

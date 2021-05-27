@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript">
+	function sosanh(){
+		var a = document.getElementById('soa').value;
+		var b = document.getElementById('sob').value;
+		if (a== null||a=="") {
+			alert("ban chua nhap a");
+			return false;
+		}
+		else if (b== null||b=="") {
+			alert("ban chua nhap b");
+			return false;
+		}
+		else if(a > b){
+			alert(a+ ' lon ho '+ b);
+			return true;
+		}
+		else {
+			alert(a+ ' nho hon '+ b);
+			return true;
+		}
+	}
+</script>
+</head>
+
+<body>
+	<tr>
+			<td>Nhập số a:</td>
+			<td><input type="number" id="soa"></td>
+	</tr>
+	<tr>
+			<td>Nhập số b:</td>
+			<td><input type="number" id="sob"></td>
+	</tr>
+	<tr>
+		<button onClick="sosanh();">So Sánh</button>
+	</tr>
+	
+</body>
+</html>
