@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	.content{
+		width: 1000px;
+		margin-left: 25%;
+	}
+</style>
+</head>
+
+<body>
+	<div class="content">
+		<h1>Application for permission to date my daughter</h1>
+		<p><b>Note:</b> Form is to be complete atleast 21 days prior to date</p>
+		<fieldset>
+			<legend>Personal Details</legend>
+			<p>
+				<label for="fullname">Name :</label>
+				<input id="fullname" name="name" type="text" placeholder="enter name here" autofocus>
+			</p>
+			<p>
+				<label for="address">Address :</label>
+				<input id="address" name="address" type="text" placeholder="enter address here" autofocus>
+			</p>
+			<p>
+				<label for="email">E-mail address :</label>
+				<input id="email" name="email" type="email" placeholder="enter email here" autocomplete="off" autofocus>
+			</p>
+			<p>
+				<label for="phone">Phone Number :</label>
+				<input id="phone" name="phone" type="number" placeholder="enter 10 digit number" autofocus>
+			</p>
+			<p>
+				<label for="iq">IQ :</label>
+				<input id="iq" name="iq" type="number" placeholder="enter IQ here" autofocus>
+			</p>
+			<p>
+				<label>Gender :</label><br><br>
+				<input type="radio" id="male" name="sex" value="" /><label for="male">Male</label><br>
+				<input type="radio" id="female" name="sex" value="" /><label for="female">Female</label><br>
+				<input type="radio" id="other" name="sex" value="" /><label for="other">Other</label>
+			</p>
+			<p>
+			<label>Date of Proposed Outing: </label>
+			<input id="date" name="date" type="date" autofocus><br>
+		</p>
+		</fieldset>
+		<fieldset>
+			<p><b>Check All That Apply</b></p>
+			<input type="checkbox" name="opinion1" value="" /><label>I have tattoos and/or piercings</label><br>
+			<input type="checkbox" name="opinion2" value="" /><label>I am more than 2 years older than my daughter</label><br>
+			<input type="checkbox" name="opinion3" value="" /><label>I own a panel van or V8 ute</label><br>
+			<input type="checkbox" name="opinion4" value="" /><label>I work full-time</label><br>
+			<input type="checkbox" name="opinion5" value="" /><label>My parents are rich</label><br>
+			<input type="checkbox" name="opinion6" value="" /><label>Is the date at a well lit public location</label>
+		</fieldset>
+	  <fieldset>
+			<p>
+				<label>Political Persuasion:</label>
+				<input list="browsers1" name="browser1" id="browser1">
+				<datalist id="browsers1">
+					<option value="Left wing"></option>
+					<option value="Right wing"></option>
+					<option value="Conservative"></option>
+					<option value="Nazi"></option>
+				</datalist>
+				<label>Education Level Completed:</label>
+		  		<input list="browsers2" name="browser2" id="browser2">
+		  		<datalist id="browsers2">
+					<option value="high school"></option>
+					<option value="colleges"></option>
+					<option value="University"></option>
+					<option value="none"></option>
+				</datalist>
+			</p>	
+		</fieldset>
+		<fieldset>
+			<legend>Essay Section</legend>
+			<p>In 50 words or more explain why do you want to date my daughter</p>
+			<textarea  placeholder="Enter Text Here" cols="55" rows="5"></textarea>
+			<p>Please upload contact details for 2 references</p>
+			<textarea  placeholder="Enter Text Here" cols="55" rows="5"></textarea>
+			<p>Upload Police Clearance Certificate, Bank Statement and Certificates here:<input type="file"></p>
+		</fieldset>
+		<button type="submit">Send your application</button>
+	</div>
+</body> 
+</html>
